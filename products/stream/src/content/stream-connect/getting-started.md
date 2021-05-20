@@ -5,19 +5,24 @@ order: 5
 
 <Aside>
 
-Note: Stream Connect is currently in beta and will be available to all users in coming weeks.
+Note: Stream Connect is currently in closed beta and will be available to all users in coming weeks. To request an invite, [submit a request for an invite](https://docs.google.com/forms/d/1rpRFKDTZTnh0LxysM2_Rky5pYt_rs9pUdSoJr_Ix2pk/edit).
 
 </Aside>
 
-Stream Connect allows you to retransmit your RTMP(S) feed to one or more destinations.
+Stream Connect allows you to retransmit your RTMP(S) feed to one or more destinations that support RTMP. To learn more about the vision and benefits, checkout the [Stream Connect blog post](https://blog.cloudflare.com/restream-with-stream-connect/). 
+
+Stream Connect does not output HLS/DASH at the moment. This will be supported at a later date.
 
 ## Quick Start
 
-There are three steps to start using Stream Connect
+There are four steps to start using Stream Connect
 
-1. Create a live input that you will transmit to
-1. Add a destination to the live input
-1. Start streaming
+1. Create a live input that you will transmit to. Upon creating an input, you will receive an RTMP endpoint and stream key to use in step 3.
+2. Add a destination to the live input
+3. Configure your streaming software with the RTMP endpoint and stream key from Step 1
+4. Start streaming! Stream Connect will automatically ingest the video and push it to the configured destinations
+
+You can do steps 1 and 2 using the API or the Stream Connect UI (TODO: add link once UI is ready).
 
 ### Create a live input
 
