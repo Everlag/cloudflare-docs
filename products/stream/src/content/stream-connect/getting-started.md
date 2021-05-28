@@ -65,7 +65,7 @@ Add an Output to start retransmitting live video. You can add or remove Outputs 
 #### cURL example
 ```bash
 curl -X POST \
---data '{"url": "rtmps://a.rtmp.youtube.com/live2","streamKey": "<redacted>"}' \
+--data '{"url": "rtmp://a.rtmp.youtube.com/live2","streamKey": "<redacted>"}' \
 -H "Authorization: Bearer $TOKEN" \
 https://api.cloudflare.com/client/v4/accounts/$ACCOUNT/stream/live_inputs/$INPUT_UID/outputs
 ```
@@ -230,4 +230,3 @@ curl -X DELETE \
 -H "Authorization: Bearer $TOKEN" \
 https://api.cloudflare.com/client/v4/accounts/$ACCOUNT/stream/live_inputs/$INPUT_UID
 ```
-
