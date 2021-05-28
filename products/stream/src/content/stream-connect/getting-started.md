@@ -22,7 +22,7 @@ There are four steps to start using Stream Connect
 3. Configure your streaming software with the RTMP endpoint and stream key from Step 1
 4. Start streaming! Stream Connect will automatically ingest the video and push it to the configured outputs
 
-You can do steps 1 and 2 using the API or the [Stream Connect UI](https://dash.cloudflare.com/?to=:account/stream/inputs)
+You can do steps 1 and 2 using the API or the [Stream Connect UI](https://dash.cloudflare.com/?to=/:account/stream/inputs)
 
 ### Create a live input
 
